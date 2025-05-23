@@ -1,90 +1,121 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fff0f6; /* pastel pink background */
   margin: 0;
-  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe6f0;
+  color: #880e4f;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  background: #ffe6f0; /* soft pink container */
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(255, 182, 193, 0.4); /* pink shadow */
+  background-color: #fff0f5;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
   max-width: 600px;
-  width: 90%;
-  text-align: center;
+  box-shadow: 0 8px 20px rgba(136, 14, 79, 0.1);
+  box-sizing: border-box;
 }
 
 h1 {
-  color: #d6336c; /* deep pink */
-  font-weight: 700;
-  margin-bottom: 0.3rem;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 0.4em;
+  color: #d81b60;
 }
 
 p {
-  color: #ad1457;
-  font-style: italic;
-  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1.5em;
 }
 
 textarea {
   width: 100%;
-  padding: 1rem;
-  border: 2px solid #f8bbd0; /* pastel pink border */
-  border-radius: 12px;
+  padding: 15px;
+  border: 2px solid #f8bbd0;
+  border-radius: 10px;
   resize: vertical;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  background: #fff0f6;
-  color: #6a1b4d;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: inset 0 0 5px #fce4ec;
+  font-size: 1em;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 #wordCount {
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: right;
   color: #880e4f;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-input[type="file"] {
-  margin: 0.5rem 0;
-  border-radius: 8px;
 }
 
 button {
-  background: #f48fb1; /* pastel pink button */
-  color: #4a145b;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
+  display: block;
   width: 100%;
-  box-shadow: 0 6px 10px rgba(244, 143, 177, 0.6);
-  transition: background 0.3s ease;
+  background-color: #f06292;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background: #ec407a; /* darker pink on hover */
+  background-color: #ec407a;
 }
 
 .message {
-  margin-top: 1.5rem;
-  background: #fce4ec;
-  border-left: 6px solid #f48fb1;
-  padding: 1rem;
-  color: #880e4f;
-  border-radius: 12px;
   text-align: center;
-  font-weight: 700;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-size: 1.1rem;
+  margin-top: 20px;
+  background-color: #f8bbd0;
+  padding: 15px;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  textarea {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  #wordCount {
+    font-size: 0.85em;
+  }
+
+  .message {
+    font-size: 0.9em;
+  }
 }
