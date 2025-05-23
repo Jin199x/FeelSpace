@@ -65,6 +65,13 @@ button {
   transition: background-color 0.3s ease;
 }
 
+button[type="submit"] {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
 button:hover {
   background-color: #ec407a;
 }
