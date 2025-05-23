@@ -4,12 +4,13 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.3.0/firebase
 import { getStorage } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyBXRwHdHZDwqq2eb2cLFXR1arrsO6bXRDA",
   authDomain: "feelspace-7.firebaseapp.com",
   projectId: "feelspace-7",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  storageBucket: "feelspace-7.firebasestorage.app",
+  messagingSenderId: "3685822280",
   appId: "1:3685822280:web:a1e99ec4d597cf248b4d7d"
+  measurementId: "G-GGSWFV3GKM"
 };
 
 // Initialize Firebase
