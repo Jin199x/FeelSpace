@@ -8,11 +8,12 @@ const confirmation = document.getElementById('confirmation');
 
 const MAX_WORDS = 2000;
 
-// Word count update
+// Word count update and hide confirmation
 rantText.addEventListener('input', () => {
   const words = rantText.value.trim().split(/\s+/).filter(Boolean);
   wordCount.textContent = `${words.length} / ${MAX_WORDS} words`;
   wordCount.style.color = words.length > MAX_WORDS ? 'red' : '#880e4f';
+  confirmation.style.display = 'none'; // Hide confirmation when typing starts
 });
 
 // Handle form submission
