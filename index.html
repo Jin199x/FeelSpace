@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FeelSpace</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>FeelSpace</h1>
+    <p>Let your soul speak. (2000-word max)</p>
+
+    <form id="rantForm">
+      <textarea id="rantText" placeholder="Write your thoughts here..." rows="10"></textarea>
+      <div id="wordCount">0 / 2000 words</div>
+
+	<label>Attach up to 2 images:</label>
+	<input type="file" id="images" accept="image/*" multiple>
+
+      <button type="submit">Send to the stars</button>
+    </form>
+
+    <div id="confirmation" class="message" style="display:none;">
+      ✨ You’ve sent your feelings to the stars. Let’s hope the Gods will read them. ✨
+    </div>
+  </div>
+</body>
+</html>
